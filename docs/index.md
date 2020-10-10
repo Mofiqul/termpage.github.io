@@ -1,37 +1,183 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/Mofiqul/termpage/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
 
-### Markdown
+    <div class="container">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        <p>
+            <span class="prompt">
+                devops@devops
+            </span>
 
-```markdown
-Syntax highlighted code block
+            <img src="./img/ubuntu.svg">
+            ~/
+            <img src="./img/home.svg">
+            /startpage
+            <img src="./img//straight-right-arrow.svg"> cat
+            <span class="prompt-text">
+                index.js
+            </span>
+            <span class="prompt  clock-area" style="float: right; margin-top: 5px;">
+                <img src="./img/wall-clock.svg">
+                <span class="clock"></span>
+            </span>
+        </p>
 
-# Header 1
-## Header 2
-### Header 3
+        <p>
+            <span class="syn">
+                const
+            </span>
+            <span class="name">
+                app
+            </span>
+            <span class="symbol">:</span>
+            <span class="types">Startpage</span>
+            <span class="syn">
+                = new
+            </span>
+            <span class="types">
+                StartPage({
+            </span>
 
-- Bulleted
-- List
+            <ul>
+                <li>
+                    <span class="name">el:</span>
+                    <span class="value">'#start'</span>
+                    <span class="name">,</span>
+                </li>
+                <li>
+                    <span class="name">pinned: {</span>
+                    <ul>
+                        <li>
+                            <a href="https://github.com" rel="noreferrer">
+                                <span class="name">github:</span>
+                                <span class="value">'github.com'</span>
+                                <span class="name">,</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://reddit.com" rel="noreferrer">
+                                <span class="name">reddit:</span>
+                                <span class="value">'reddit.com'</span>
+                                <span class="name">,</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://mail.google.com" rel="noreferrer">
+                                <span class="name">gmail:</span>
+                                <span class="value">'mail.google.com'</span>
+                                <span class="name">,</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://figma.com" rel="noreferrer">
+                                <span class="name">figma:</span>
+                                <span class="value">'figma.com'</span>
+                                <span class="name">,</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://bitbucket.com" rel="noreferrer">
+                                <span class="name">bitbucket:</span>
+                                <span class="value">'bitbucket.com'</span>
+                                <span class="name">,</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com" rel="noreferrer">
+                                <span class="name">youtube:</span>
+                                <span class="value">'youtube.com'</span>
+                                <span class="name">,</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dev.to" rel="noreferrer">
+                                <span class="name">dev.to:</span>
+                                <span class="value">'dev.to'</span>
+                                <span class="name">,</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://news.google.com" rel="noreferrer">
+                                <span class="name">news:</span>
+                                <span class="value">'news.google.com'</span>
+                                <span class="name">,</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://draw.io" rel="noreferrer">
+                                <span class="name">draw.io:</span>
+                                <span class="value">'draw.io'</span>
+                                <span class="name">,</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" rel="noreferrer">
+                                <span class="name">twitter:</span>
+                                <span class="value">'twitter.com'</span>
+                                <span class="name">,</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="name">}</span>
+                </li>
+            </ul>
+            <span class="name">
+                )}
+            </span>
+        </p>
 
-1. Numbered
-2. List
+        <p>
+            <form action="https://duckduckgo.com/" method="get">
+                <span class="prompt">
+                    devops@devops
+                </span>
 
-**Bold** and _Italic_ and `Code` text
+                <img src="./img/ubuntu.svg">
+                ~/
+                <img src="./img/home.svg">
+                /startpage
+                <img src="./img//straight-right-arrow.svg"> d
+                <input type="search" placeholder="Enter keywords" name="q" autofocus>
+            </form>
+        </p>
+    </div>
 
-[Link](url) and ![Image](src)
-```
+</body>
+<script>
+    function currentTime() {
+        var date = new Date();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        var sec = date.getSeconds();
+        hour = updateTime(hour);
+        min = updateTime(min);
+        sec = updateTime(sec);
+        document.querySelector(".clock").innerHTML = hour + ":" + min + ":" + sec;
+        var t = setTimeout(function () {
+            currentTime()
+        }, 1000);
+    }
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+    function updateTime(k) {
+        if (k < 10) {
+            return "0" + k;
+        } else {
+            return k;
+        }
+    }
 
-### Jekyll Themes
+    currentTime();
+</script>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Mofiqul/termpage/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</html>
